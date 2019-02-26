@@ -1,8 +1,8 @@
 import PropTypes from 'prop-types';
-import { Component } from 'react';
+import { PureComponent } from 'react';
 import styles from '../../statics/styles/global.scss';
 
-export default class AccessibilityListener extends Component {
+export default class AccessibilityListener extends PureComponent {
   handleTabKeyUp = e => {
     if (e.which === 9 && document.body.classList.contains(styles.noOutline)) {
       document.body.classList.remove(styles.noOutline);

@@ -64,7 +64,7 @@ const getUnstyledBlocks = (mergedStyles, textDirection) => (children, blockProps
         </p>
       );
     } else {
-      return <div className={mergedStyles.text} />;
+      return <div key={blockProps.keys[i]} className={mergedStyles.text} />;
     }
   });
 
